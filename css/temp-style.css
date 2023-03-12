@@ -1,0 +1,186 @@
+/* Custom Properties */
+:root {
+    --clr-light-pink: #d89bc9;
+    --clr-light-purple: #a28fcc;
+    --clr-light-green: #b4ccab;
+    --clr-light-skyblue: #91c8db;
+
+    --clr-yellow: #ffd065;
+
+    --clr-background: #ffffff;
+}
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+html,
+body {
+    height: 100vh;
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+
+/* Utility Styling */
+.flex--group {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* general Styling */
+body {
+    background-color: var(--clr-background);
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.65rem 10rem 0.65rem 9rem;
+    background-color: var(--clr-background);
+    position: sticky;
+    top: 0;
+}
+header span {
+    gap: 1.5rem;
+}
+nav {
+    gap: 2rem;
+    font-weight: 600;
+}
+nav li {
+    text-transform: uppercase;
+}
+nav li a {
+    color: gray;
+}
+nav li.active a {
+    color: black;
+    padding-bottom: 0.1rem;
+    border-bottom: 3px solid #db5b6f;
+}
+.order-button {
+    padding: 0rem 1rem;
+    background-color: var(--clr-yellow);
+}
+
+main {
+    border-top-right-radius: 2rem;
+    border-radius: 2rem;
+    margin: 0rem 3.5rem;
+    overflow: hidden;
+}
+
+button {
+    padding: 0.75rem 1rem;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 2rem;
+}
+
+.flower-border {
+    position: fixed;
+    width: 10rem;
+    z-index: 1;
+}
+.flower-border img {
+    width: 100%;
+}
+.flower-border-left {
+    top: 0%;
+    left: -4%;
+    transform: rotate(180deg);
+}
+.flower-border-right {
+    bottom: 0%;
+    right: -4%;
+}
+
+.home {
+    background: linear-gradient(
+        rgba(121, 122, 140, 0.15) 0%,
+        rgb(255, 255, 255) 60%
+    );
+    display: flex;
+    gap: 2.5rem;
+    padding: 2rem 4rem;
+}
+.butterfly {
+    position: absolute;
+    width: 16rem;
+    top: 16%;
+    left: 52%;
+}
+.butterfly img {
+    width: 100%;
+}
+.hero-image-container {
+    flex-basis: 40%;
+    display: grid;
+    place-items: center;
+}
+.hero-image {
+    overflow: hidden;
+    margin: 2rem 1rem 3rem 1rem;
+}
+.hero-image img {
+    width: 100%;
+}
+
+.hero-content {
+    flex-basis: 60%;
+    padding: 3rem;
+
+    flex-direction: column;
+    gap: 1.5rem;
+    position: relative;
+}
+.hero-content h1 {
+    width: 80%;
+    font-size: 5rem;
+    line-height: 1;
+}
+.hero-content p {
+    color: gray;
+}
+
+.hero-buttons {
+    gap: 1rem;
+}
+.hero-buttons button {
+    width: 10rem;
+}
+
+.collection-button {
+    background-color: black;
+    color: var(--clr-background);
+}
+.shop-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+    background-color: var(--clr-background);
+    border: 1px solid black;
+}
+.hero-counts {
+    margin-top: 2rem;
+    gap: 2rem;
+}
+.hero-counts h2 {
+    font-size: 2rem;
+}
+.hero-counts p {
+    font-size: 0.9rem;
+}
+
+.collection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}

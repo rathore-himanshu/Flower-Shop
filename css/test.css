@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 0.5rem 3rem 0.5rem 2rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 2rem;
+}
+li {
+    list-style: none;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    color: gray;
+}
+.active {
+    color: black;
+    border-bottom: 3px solid #db5b6f;
+}
+
+.order {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 1rem;
+    background-color: #ffd065;
+}

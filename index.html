@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Flower Shop - A Collection of beautifule flowers</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sail&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <!-- For Sticky Flowers on top-left and bottom-right corner-->
+    <div class="flower-border flower-border-left">
+        <img src="images/flower-border-removebg-preview.png" alt aria-hidden="true">
+    </div>
+    <div class="flower-border flower-border-right">
+        <img src="images/flower-border-removebg-preview.png" alt aria-hidden="true">
+    </div>
+
+    <!-- Header -->
+    <header class="flex--group">
+
+        <img src="images/logo.png" alt="logo" />
+
+        <nav class="flex--group">
+            <li class="active">
+                <a href="#home">Home</a>
+            </li>
+            <li>
+                <a href="#collection">Collection</a>
+            </li>
+            <li>
+                <a href="#catalogue">Catalogue</a>
+            </li>
+            <li>
+                <a href="#about">About</a>
+            </li>
+        </nav>
+
+        <span class="flex--group">
+            <button class="order-button">Contact to order</button>
+            <img src="images/icons/shopping-bag.png" alt="shopping bag icon">
+        </span>
+
+    </header>
+
+    <!-- Main -->
+    <main>
+        <section class="home grid--group" id="home">
+
+            <div class="hero-image-container grid--group">
+                <div class="hero-image">
+                    <img src="images/main-bg.png" alt="">
+                </div>
+            </div>
+
+            <div class="hero-content-container">
+                <div class="hero-content grid--group">
+                    <span class="butterfly">
+                        <img src="images/butterfly-removebg.png" alt aria-hidden="true">
+                    </span>
+
+                    <h1>Flowers bloom for Loved Ones...</h1>
+                    <p>
+                        Flowers is the best gifts that can express your love, sympathy, care and other emotions that the
+                        world has already seen. Floristy has taken the responsibility to become your messenger of
+                        Emotions. Send
+                        flower bouquets online and add more smiles to your loved ones' faces.
+                    </p>
+                    <div class="hero-buttons flex--group">
+                        <button class="collection-button">All Collection</button>
+                        <button class="shop-button">
+                            Shop Now
+                            <img src="images/icons/phone-call.png" alt aria-hidden="true">
+                        </button>
+                    </div>
+                    <div class="hero-counts flex--group">
+                        <div class="reviews-count">
+                            <h2>164K</h2>
+                            <p>Custmer Reviews</p>
+                        </div>
+                        <div class="collection-count">
+                            <h2>231K</h2>
+                            <p>Flower Collection</p>
+                        </div>
+                        <div class="location-count">
+                            <h2>12+</h2>
+                            <p>Store Location</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="collection" id="collection">
+            <div class="grid--group">
+                <div class="card">
+                    <div class="card-details">
+                        <p>Always New</p>
+                        <h2>New Arival</h2>
+                    </div>
+                    <img src="images/collection-1.png" alt aria-hidden="true">
+                </div>
+                <div class="card">
+                    <div class="card-details">
+                        <p>Gift for you</p>
+                        <h2>Bundling Gift</h2>
+                    </div>
+                    <img src="images/collection-2.png" alt aria-hidden="true">
+                </div>
+                <div class="card">
+                    <div class="card-details">
+                        <p>Fresh Room</p>
+                        <h2>Room Flower</h2>
+                    </div>
+                    <img src="images/collection-3.png" alt aria-hidden="true">
+                </div>
+                <div class="card">
+                    <div class="card-details">
+                        <p>Wedding Bundling</p>
+                        <h2>Bucket Wedding</h2>
+                    </div>
+                    <img src="images/collection-4.png" alt aria-hidden="true">
+                </div>
+            </div>
+
+            <div class="our-story">
+                <div class="flex--group">
+                    <div class="image-container">
+                        <img src="images/ourstory-removebg-preview.png" alt="">
+                    </div>
+                    <h2 class="fancy">Flower Quality is Our Priority</h2>
+                </div>
+            </div>
+        </section>
+
+        <section class="catalogue" id="catalogue">
+            <h2>Catalogue</h2>
+            <div class="filters flex--group">
+                <li class="active">New Arrival</li>
+                <li>Gift</li>
+                <li>Bucket</li>
+                <li>Bundling Package</li>
+                <li>
+                    <label for="sort-by">Sort by</label>
+                    <select name="sort-by" id="sort-by">
+                        <option value="price-asc">price : low to high</option>
+                        <option value="price-dsc">price : high to low</option>
+                        <option value="popularity">most popular</option>
+                        <option value="newest">newest first</option>
+                    </select>
+                </li>
+            </div>
+            <!-- <div class="catalogue-container grid--group"> -->
+            <!-- <div class="detailed-filters">
+                    <form action="">
+                        <fieldset>
+                            <legend>Categories:</legend>
+
+                            <div>
+                                <input type="checkbox" name="" id="">
+                                <label for=""></label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="" id="">
+                                <label for=""></label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="" id="">
+                                <label for=""></label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="" id="">
+                                <label for=""></label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="" id="">
+                                <label for=""></label>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Price:</legend>
+
+                            <div>
+                                <input type="radio" id="huey" name="drone" value="huey" checked>
+                                <label for="huey">Huey</label>
+                            </div>
+
+                            <div>
+                                <input type="radio" id="dewey" name="drone" value="dewey">
+                                <label for="dewey">Dewey</label>
+                            </div>
+
+                            <div>
+                                <input type="radio" id="louie" name="drone" value="louie">
+                                <label for="louie">Louie</label>
+                            </div>
+
+                            <div>
+                                <input type="number" name="" id="" placeholder="&#8377; Min">
+                                <input type="number" name="" id="" placeholder="&#8377; Max">
+                            </div>
+                        </fieldset>
+                        <button type="submit">Apply Filters</button>
+                    </form>
+                </div> -->
+
+            <div class="products-container grid--group">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/product1.png" alt aria-hidden="true">
+                    </div>
+                    <div class="product-details flex--group">
+                        <p>Blue Hyacinth Flower Eco Room Flower - Natural Air Room</p>
+                        <div class="product-buy flex--group">
+                            <h2>&#8377; 230</h2>
+                            <button class="add-to-cart">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/product2.png" alt aria-hidden="true">
+                    </div>
+                    <div class="product-details flex--group">
+                        <p>Bucket Flower for your Mom - Happy Mom's Day</p>
+                        <div class="product-buy flex--group">
+                            <h2>&#8377; 280</h2>
+                            <button class="add-to-cart">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/product3.png" alt aria-hidden="true">
+                    </div>
+                    <div class="product-details flex--group">
+                        <p>Birthday Package for Friends - Gift Bundling</p>
+                        <div class="product-buy flex--group">
+                            <h2>&#8377; 340</h2>
+                            <button class="add-to-cart">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/product4.png" alt aria-hidden="true">
+                    </div>
+                    <div class="product-details flex--group">
+                        <p>Gift Box and Rose for Your Love - Valentine Day</p>
+                        <div class="product-buy flex--group">
+                            <h2>&#8377; 480</h2>
+                            <button class="add-to-cart">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/product5.png" alt aria-hidden="true">
+                    </div>
+                    <div class="product-details flex--group">
+                        <p>Summer Bride with a Floral Wreath - New Arrival</p>
+                        <div class="product-buy flex--group">
+                            <h2>&#8377; 1270</h2>
+                            <button class="add-to-cart">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/product6.png" alt aria-hidden="true">
+                    </div>
+                    <div class="product-details flex--group">
+                        <p>Wedding Bucket Flower Package - Wedding Package</p>
+                        <div class="product-buy flex--group">
+                            <h2>&#8377; 730</h2>
+                            <button class="add-to-cart">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/product7.png" alt aria-hidden="true">
+                    </div>
+                    <div class="product-details flex--group">
+                        <p>Wedding Set Up Summer Vibe Outdoor - Wedding Package</p>
+                        <div class="product-buy flex--group">
+                            <h2>&#8377; 10000</h2>
+                            <button class="add-to-cart">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/product8.png" alt aria-hidden="true">
+                    </div>
+                    <div class="product-details flex--group">
+                        <p>Wedding Set Up Natural Outdoor - Wedding Package</p>
+                        <div class="product-buy flex--group">
+                            <h2>&#8377; 12000</h2>
+                            <button class="add-to-cart">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- </div> -->
+            <div class="pagination flex--group">
+                <a href="#" class="prev">&lt;</a>
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#" class="next">&gt;</a>
+            </div>
+        </section>
+
+        <section class="about" id="about"></section>
+    </main>
+
+    <footer class="grid--group">
+        <h2>Please come again,<br> Have a Nice Day!</h2>
+
+        <img src="images/footer-flower-bg.png" alt="">
+    </footer>
+</body>
+
+</html>

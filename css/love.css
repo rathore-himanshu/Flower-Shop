@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    top: 0;
+}
+h1 {
+    text-align: center;
+    border: 2px green;
+    border-style: dashed;
+    margin: 40px;
+    padding: 20px;
+    background-color: #fce4ec;
+    color: skyblue;
+}
+
+img {
+    width: 60px;
+}
